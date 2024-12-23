@@ -2,17 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'map.dart';
 
-
 class playlist extends StatelessWidget {
-  
-  final malayalamSongs ;
-   playlist({ required this.malayalamSongs
-    
-  });
-  
+  int index = 0;
+  late Map<String, dynamic> songs;
+  playlist(this.index);
 
   @override
   Widget build(BuildContext context) {
+    songs = malayalamSongs[index];
     return Container(
         height: 44.h,
         width: 158.w,
@@ -28,20 +25,21 @@ class playlist extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(11).r,
               ),
-              child: Image.asset('assets/play1.png'),
+              child: Image.network(songs['imageurl']),
             ),
             Padding(padding: const EdgeInsets.only(left: 8, top: 7).w.h),
             Column(
               children: [
                 Padding(padding: EdgeInsets.only(left: 8).w),
                 Text(
-                  'Best of 2024',
+                  songs['SONGS'],
                   style: TextStyle(
                     fontSize: 13.sp,
                   ),
                 ),
+                // ignore: prefer_interpolation_to_compose_strings
                 Text(
-                  'By Pedro',
+                  'by ' + songs['artist'],
                   style: TextStyle(
                     fontSize: 9.0.sp,
                   ),

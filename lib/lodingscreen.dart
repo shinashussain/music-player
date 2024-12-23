@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 //import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:audio_video_progress_bar/audio_video_progress_bar.dart';
+import 'package:music_player/playlist.dart';
 import 'next_screen.dart';
-import 'map.dart';
-import 'playlist.dart';
 
 class Lodingscreen extends StatefulWidget {
   const Lodingscreen({super.key});
@@ -69,14 +68,12 @@ class _LodingscreenState extends State<Lodingscreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(left: 18, top: 10).w.h,
-                        // child: playlist(
-                      ),
-                      // ),
+                          padding: EdgeInsets.only(left: 18, top: 10).w.h,
+                          child: playlist(1)),
                       Padding(
                         padding:
                             EdgeInsets.only(right: 18, top: 10, bottom: 6).w.h,
-                        // child: playlist(),
+                        child: playlist(2),
                       ),
                     ],
                   ),
@@ -85,11 +82,11 @@ class _LodingscreenState extends State<Lodingscreen> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(left: 18, top: 6).w.h,
-                        // child: playlist(),
+                        child: playlist(3),
                       ),
                       Padding(
                         padding: EdgeInsets.only(right: 18, top: 6).w.h,
-                        //                         git initchild:playlist(),
+                        child: playlist(4),
                       ),
                     ],
                   )

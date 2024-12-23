@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
-
-
-final List< Map<String,dynamic>>malayalamSongs=[
-    {
+final List<Map<String, dynamic>> malayalamSongs = [
+  {
     'SONGS': 'Ethu Kari Raavilum',
     'artist': 'K.J. Yesudas',
     'imageurl': 'https://picsum.photos/300/300?random=1',
     'movie': 'Bangalore Days',
     'year': '2014',
-    'colour':Color(0XFFD17736),
+    'colour': Color(0XFFD17736),
   },
   {
     'SONGS': 'Enthanu Bhai',
@@ -17,7 +15,7 @@ final List< Map<String,dynamic>>malayalamSongs=[
     'imageurl': 'https://picsum.photos/300/300?random=2',
     'movie': 'Hridayam',
     'year': '2022',
-    'colour':Color(0XFFD17736),
+    'colour': Color(0XFFD17736),
   },
   {
     'SONGS': 'Thaarum Pularum',
@@ -25,7 +23,7 @@ final List< Map<String,dynamic>>malayalamSongs=[
     'imageurl': 'https://picsum.photos/300/300?random=3',
     'movie': 'Koode',
     'year': '2018',
-    'colour':Colors.orange,
+    'colour': Colors.orange,
   },
   {
     'SONGS': 'Jeevamshamayi',
@@ -33,7 +31,7 @@ final List< Map<String,dynamic>>malayalamSongs=[
     'imageurl': 'https://picsum.photos/300/300?random=4',
     'movie': 'Theevandi',
     'year': '2018',
-    'colour':Colors.deepPurple,
+    'colour': Colors.deepPurple,
   },
   {
     'SONGS': 'Uyirin Nadhiye',
@@ -41,7 +39,7 @@ final List< Map<String,dynamic>>malayalamSongs=[
     'imageurl': 'https://picsum.photos/300/300?random=5',
     'movie': 'Mayaanadhi',
     'year': '2017',
-    'colour':Colors.deepOrangeAccent,
+    'colour': Colors.deepOrangeAccent,
   },
   {
     'SONGS': 'Kannilu Kannilu',
@@ -49,7 +47,7 @@ final List< Map<String,dynamic>>malayalamSongs=[
     'imageurl': 'https://picsum.photos/300/300?random=6',
     'movie': 'Charlie',
     'year': '2015',
-    'colour':Colors.pink,
+    'colour': Colors.pink,
   },
   {
     'SONGS': 'Malare Ninne',
@@ -57,7 +55,7 @@ final List< Map<String,dynamic>>malayalamSongs=[
     'imageurl': 'https://picsum.photos/300/300?random=7',
     'movie': 'Premam',
     'year': '2015',
-    'colour':Colors.green,
+    'colour': Colors.green,
   },
   {
     'SONGS': 'Ee Kaattu',
@@ -65,7 +63,7 @@ final List< Map<String,dynamic>>malayalamSongs=[
     'imageurl': 'https://picsum.photos/300/300?random=8',
     'movie': 'Ayyappanum Koshiyum',
     'year': '2020',
-    'colour':Colors.red,
+    'colour': Colors.red,
   },
   {
     'SONGS': 'Puthiyoru Lokam',
@@ -73,17 +71,14 @@ final List< Map<String,dynamic>>malayalamSongs=[
     'imageurl': 'https://picsum.photos/300/300?random=9',
     'movie': 'Kumbalangi Nights',
     'year': '2019',
-    'colour':Colors.blue,
+    'colour': Colors.blue,
   },
   {
     'SONGS': 'Kaattu Mooliyo',
     'artist': 'Pradeep Kumar',
     'imageurl': 'https://picsum.photos/300/300?random=10',
     'movie': 'Thattathin Marayathu',
-    'year':'2012',
-    'colour':Colors.purple,
-},
-
-
+    'year': '2012',
+    'colour': Colors.purple,
+  },
 ];
- 
