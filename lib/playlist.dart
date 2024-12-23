@@ -20,13 +20,14 @@ class playlist extends StatelessWidget {
         child: Row(
           children: [
             Container(
-              height: 44.h,
-              width: 47.w,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(11).r,
-              ),
-              child: Image.network(songs['imageurl']),
-            ),
+                height: 44.h,
+                width: 47.w,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(11).r,
+                    image: DecorationImage(
+                      image: AssetImage(songs['image']),
+                      fit: BoxFit.cover,
+                    ))),
             Padding(padding: const EdgeInsets.only(left: 8, top: 7).w.h),
             Column(
               children: [
