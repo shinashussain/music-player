@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 //import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:audio_video_progress_bar/audio_video_progress_bar.dart';
+import 'package:music_player/map.dart';
 import 'package:music_player/playlist.dart';
 import 'next_screen.dart';
+import 'likesongs.dart';
 
 class Lodingscreen extends StatefulWidget {
   const Lodingscreen({super.key});
@@ -111,111 +114,32 @@ class _LodingscreenState extends State<Lodingscreen> {
                   color: Color(0XFF69596F),
                   child: Column(
                     children: [
-                      SizedBox(
-                        height: 5.57.h,
-                      ),
-                      Row(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 23).w),
-                          Container(
-                            height: 38.h,
-                            width: 38.w,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11).r,
-                            ),
-                            child: Image.asset('assets/play1.png'),
-                          ),
-                          Padding(padding: EdgeInsets.only(left: 4)),
-                          Column(
-                            children: [
-                              Text('best song'),
-                              Text('ameen'),
-                            ],
-                          ),
-                          Padding(padding: EdgeInsets.only(left: 164.69).w),
-                          Icon(Icons.thumb_down)
-                        ],
-                      ),
-                      SizedBox(
-                        height: 5.57.h,
-                      ),
-                      Row(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 23).w),
-                          Container(
-                            height: 38.h,
-                            width: 38.w,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11).r,
-                            ),
-                            child: Image.asset('assets/play2.png'),
-                          ),
-                          Padding(padding: EdgeInsets.only(left: 4).w),
-                          Column(
-                            children: [
-                              Text('best song'),
-                              Text('ameen'),
-                            ],
-                          ),
-                          Padding(padding: EdgeInsets.only(left: 164.69).w),
-                          Icon(Icons.thumb_down)
-                        ],
-                      ),
-                      SizedBox(
-                        height: 5.57.h,
-                      ),
-                      Row(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 23).w),
-                          Container(
-                            height: 38.h,
-                            width: 38.w,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11).r,
-                            ),
-                            child: Image.asset('assets/play3.png'),
-                          ),
-                          Padding(padding: EdgeInsets.only(left: 4).w),
-                          Column(
-                            children: [
-                              Text('best song'),
-                              Text('ameen'),
-                            ],
-                          ),
-                          Padding(padding: EdgeInsets.only(left: 164.69).w),
-                          Icon(Icons.thumb_down)
-                        ],
-                      ),
-                      SizedBox(
-                        height: 5.57.h,
-                      ),
-                      Row(
-                        children: [
-                          Padding(padding: EdgeInsets.only(left: 23).w),
-                          Container(
-                            height: 38.h,
-                            width: 38.w,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11).r,
-                            ),
-                            child: Image.asset('assets/play4.png'),
-                          ),
-                          Padding(padding: EdgeInsets.only(left: 4).w),
-                          Column(
-                            children: [
-                              Text('best song'),
-                              Text('ameen'),
-                            ],
-                          ),
-                          Padding(padding: EdgeInsets.only(left: 164.69).w),
-                          Icon(Icons.thumb_down)
-                        ],
-                      ),
+                     Expanded(
+            child: ListView.builder(
+              shrinkWrap: true,
+              scrollDirection: Axis.vertical,
+              itemCount: 15,
+              itemBuilder: (ctx,int){
+                return Card(
+                  color: Color(0XFF69596F),
+                  child: Column(
+                    children: [
+                      likedsongs(1),
+                    
+                      
+                    ],
+                  ),
+                );
+              },
+            ),
+          ),
                     ],
                   ),
                 ),
               ],
-            ),
+            ), 
+           
+            
             Container(
               height: 289.5.h,
               width: 372.w,
@@ -242,8 +166,10 @@ class _LodingscreenState extends State<Lodingscreen> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(11).r,
                           color: Colors.black,
+                          image: DecorationImage(image: AssetImage('assets/play1.png'),
+                          fit: BoxFit.cover)
                         ),
-                        child: Image.asset('assets/play1.png'),
+                      
                       ),
                       SizedBox(
                         width: 27.w,
@@ -364,6 +290,7 @@ class _LodingscreenState extends State<Lodingscreen> {
                   IconButton(onPressed: () {}, icon: Icon(Icons.shuffle)),
                 ],
               ),
+              
             ],
           ),
         ),
@@ -371,3 +298,4 @@ class _LodingscreenState extends State<Lodingscreen> {
     );
   }
 }
+

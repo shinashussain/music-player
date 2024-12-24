@@ -25,7 +25,7 @@ class playlist extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(11).r,
                     image: DecorationImage(
-                      image: AssetImage(songs['image']),
+                      image: NetworkImage(songs['imageurl']),
                       fit: BoxFit.cover,
                     ))),
             Padding(padding: const EdgeInsets.only(left: 8, top: 7).w.h),

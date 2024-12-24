@@ -18,7 +18,7 @@ final List<Map<String, dynamic>> malayalamSongs = [
     'colour': Color(0XFFD17736),
   },
   {
-    'SONGS': 'Thaarum Pularum',
+    'SONGS': 'Thaarum Pular',
     'artist': 'Vijay Yesudas',
     'imageurl': 'https://picsum.photos/300/300?random=3',
     'movie': 'Koode',
@@ -82,3 +82,5 @@ final List<Map<String, dynamic>> malayalamSongs = [
     'colour': Colors.purple,
   },
 ];
+
+  
